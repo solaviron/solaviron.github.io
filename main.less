@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 100%;
+
+    @media (@desktop) {
+        width: 100%;
+    }
+}
+
+.title-1{
+    position: relative;
+    padding: 200px 0;
+    color: @base-color;
+    text-align: center;
+    font-size: 50px;
+}
+
+.main-img{
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50%;
+    height: 50%;
+
+    @media (@desktop) {
+        width: 0;
+        height: 0;
+    }
+}
